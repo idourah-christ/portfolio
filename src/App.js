@@ -1,25 +1,60 @@
-import logo from './logo.svg';
 import './App.css';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Home from './Home';
+import ReactArticle from './articles/competences/React';
+import NodeJsArticle from './articles/competences/Node';
+import ArchitectureArticle from './articles/competences/Architecture';
+import AutonomieArticle from './articles/competences/Autonomie';
+import LedearshipArticle from './articles/competences/Ledearship';
+import RigueurArticle from './articles/competences/Rigueur';
+import MobemboArticle from './articles/realisations/Mobembo';
+import RxvalidArticle from './articles/realisations/Rxvalid';
+import NotGDeployArticle from './articles/realisations/NotG';
 
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<Home/>
+  },
+  {
+    path:"/react-js",
+    element:<ReactArticle />
+  },
+  {
+    path:"/node-js",
+    element:<NodeJsArticle />
+  },
+  {
+    path:"/architecture",
+    element:<ArchitectureArticle />
+  },
+  {
+    path:"/autonomie",
+    element:<AutonomieArticle/>
+  },
+  {
+    path:"/ledearship",
+    element:<LedearshipArticle/>
+  },
+  {
+    path:"/rigueur",
+    element:<RigueurArticle/>
+  },
+  {
+    path:"/mobembo",
+    element:<MobemboArticle/>
+  },
+  {
+    path:"/rxvalid",
+    element:<RxvalidArticle/>
+  },
+  {
+    path:"/notg",
+    element:<NotGDeployArticle/>
+  }
+])
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<RouterProvider router={router} />);
 }
 
 export default App;
