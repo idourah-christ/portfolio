@@ -1,56 +1,44 @@
-import ArticleLayout from "../../ArticleLayout";
 import reactArticle from "../text/react";
+import Dockerfile from "../../assets/images/portfolio/article/react/Dockerfile.png";
+import nginxConfig from "../../assets/images/portfolio/article/react/nginxConfig.png";
+import DockerRunImg from "../../assets/images/portfolio/article/react/DockerRun.png";
+import {
+  Article,
+  ArticleHeader,
+  ArticleBlock,
+  ArticleImage,
+  ArticleParagraphe,
+  UnOrderList,
+  OrderList,
+} from "../../component/Article";
 
-const Article = (props) => {
-  return (
-    <ArticleLayout>
-      <article>{props.children}</article>
-    </ArticleLayout>
-  );
-};
-
-const ArticleHeader = ({ header }) => {
-  return (
-    <div className="article-header">
-      <h3 className="artcle-title">{header.title}</h3>
-      <div className="article-abstract">
-        <ArticleParagraphe>{header.abstract.text}</ArticleParagraphe>
-      </div>
-      <div className="article-plan">
-        <h5 className="article-plan-title">Table des matières</h5>
-        <ol>
-          {header.plan.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ol>
-      </div>
-    </div>
-  );
-};
-
-const ArticleParagraphe = (props) => {
-  return (
-    <p
-      className="article-paragraphe"
-      {...props}
-      style={{ fontSize: "18px", textAlign: "justify" }}
-    >
-      {props.children}
-    </p>
-  );
-};
-const ArticleBlock = (props) => {
-  return (
-    <div className="article-block" {...props} style={{ marginBottom: "14px" }}>
-      <h6 className="article-block-title">{props.title}</h6>
-      <section className="article-block-content">{props.children}</section>
-    </div>
-  );
-};
 const ReactArticle = () => {
   return (
     <Article>
-      <ArticleHeader header={reactArticle.header} />
+      <ArticleHeader header={reactArticle.header}>
+        <div className="article-abstract">
+          <ArticleParagraphe>
+            {reactArticle.header.abstract.text}
+          </ArticleParagraphe>
+          <OrderList>
+            <li>Standardisation et Portabilité</li>
+            <li>Efficacité de déploiement </li>
+            <li>Scalabilité et gestion de ressources</li>
+            <li>Cohérence et Répétabilité</li>
+            <li>Sécurité et isolation</li>
+          </OrderList>
+        </div>
+        <div className="article-plan">
+          <h5 className="article-plan-title">Table des matières</h5>
+          <OrderList>
+            {reactArticle.header.plan.map((item, index) => (
+              <li key={index} className="list-item">
+                {item}
+              </li>
+            ))}
+          </OrderList>
+        </div>
+      </ArticleHeader>
       <div className="article-body">
         <ArticleBlock title="1. Introduction">
           <ArticleParagraphe>
@@ -67,11 +55,13 @@ const ReactArticle = () => {
             Avant de commencer, assurez-vous d'avoir les éléments suivants
             installés sur votre machine :
           </ArticleParagraphe>
-          <ul className="article-unorder-list">
-            <li className="article-">- Node.js et npm</li>
-            <li>- Docker et Docker Compose</li>
-            <li>- Votre projet React JS que vous souhaitez déployer</li>
-          </ul>
+          <UnOrderList>
+            <li className="list-item">- Node.js et npm</li>
+            <li className="list-item">- Docker et Docker Compose</li>
+            <li className="list-item">
+              - Votre projet React JS que vous souhaitez déployer
+            </li>
+          </UnOrderList>
         </ArticleBlock>
 
         <ArticleBlock title="3. Configuration du fichier Dockerfile">
@@ -80,13 +70,16 @@ const ReactArticle = () => {
             notre projet React. Ce fichier contiendra les instructions pour
             construire notre image Docker.
           </ArticleParagraphe>
-          <image src="" />
+          <ArticleImage
+            style={{ height: "1000px", width: "100%" }}
+            src={Dockerfile}
+          />
           <ArticleParagraphe>
             Dans ce fichier Dockerfile nous utilisons une fonctionnalité très
             puissante de docker appelée docker multi-stage. Le docker multi
             stage nous permet de créer des dockers plus petites et plus
             efficaces en utilisant plusieurs étapes de build dans un seul
-            Dockerfile Nous commençons par construire notre application React
+            Dockerfile. Nous commençons par construire notre application React
             avec la commande npm run build afin de générer les fichiers
             statistiques de notre application web. Ensuite nous copions le
             contenu du dossier build dans le répertoire{" "}
@@ -99,7 +92,7 @@ const ReactArticle = () => {
             Nous devons également créer un fichier nginx.conf à la racine de
             notre projet pour configurer Nginx :
           </ArticleParagraphe>
-          <image src="" />
+          <ArticleImage src={nginxConfig} />
           <ArticleParagraphe>
             Ce fichier indique à Nginx de servir les fichiers statiques de notre
             application React et de rediriger toutes les demandes vers
@@ -113,7 +106,7 @@ const ReactArticle = () => {
             nous pouvons maintenant construire notre image Docker et exécuter un
             conteneur.
           </ArticleParagraphe>
-          <image src="" />
+          <ArticleImage src={DockerRunImg} />
           <ArticleParagraphe>
             Accédez à `http://localhost` dans votre navigateur, et vous devriez
             voir votre application React en cours d'exécution.

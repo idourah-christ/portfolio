@@ -1,0 +1,14 @@
+.article-img {
+  border-radius: 6px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.article-list {
+  font-size: 18px;
+}
+.article {
+  font-family: "open sans";
+}
+.article-block {
+  padding-top: 10px;
+}
