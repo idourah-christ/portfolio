@@ -1,5 +1,6 @@
-import PageLayout from "./Header";
 import { Link } from "react-router-dom";
+import "./ArticleLayout.css";
+
 
 const ArticleLayout = (props) => {
     return ( 
@@ -14,21 +15,23 @@ const ArticleLayout = (props) => {
 		        <span className="icon-bar"></span>
 		        <span className="icon-bar"></span>
 		      </button>
-		      <Link to="#" className="" >Yoane Idourah</Link>
+		      <Link to="#" className="brand" >Yoane Idourah</Link>
 		    </div>
 
 		    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul className="nav navbar-nav  navbar-right">
-			        <li className="nav-link"><Link to="/">HOME</Link></li>
-			        <li className="nav-link"><Link to="/#skills">COMPETENCES</Link></li>
-					<li className="nav-link"><Link to="/#realisations">REALISATIONS</Link></li>
-					<li className="nav-link"><Link to="/#experiences">EXPERIENCES</Link></li>
-		            <li><Link to="/#contact">CONTACT</Link></li>
+			        <li className="nav-link" ><Link style={{color:"#fff"}} to="/">HOME</Link></li>
+			        <li className="nav-link"><Link style={{color:"#fff"}}  to="/#skills">COMPETENCES</Link></li>
+					<li className="nav-link"><Link style={{color:"#fff"}}  to="/#realisations">REALISATIONS</Link></li>
+					<li className="nav-link"><Link style={{color:"#fff"}}  to="/#experiences">EXPERIENCES</Link></li>
+		            <li><Link to="/#contact" style={{color:"#fff"}} >CONTACT</Link></li>
 		      	</ul>
 		    </div>
 		  </div>
 		</nav>
-        {props.children}
+		<div className="container" style={{padding:"20px"}}>
+			{props.children}
+		</div>
         </div>
      );
 }
