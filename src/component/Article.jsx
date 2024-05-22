@@ -1,8 +1,10 @@
-import ArticleLayout from "../ArticleLayout";
+import ArticleLayout from "../layouts/ArticleLayout";
 import "./Article.css";
 
 export const ArticleImage = (props) => {
-  return <img className="article-img" src={props.src} {...props} />;
+  return (
+    <img alt="article-img" className="article-img" src={props.src} {...props} />
+  );
 };
 
 export const Article = (props) => {

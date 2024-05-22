@@ -1,66 +1,71 @@
 import { Link } from "react-router-dom";
-import Banner from "./component/Banner";
-const Nav = () => {
-    return ( 
-        <nav className="navbar navbar-default mu-navbar">
-		  	<div className="container-fluid">
-		   
-		    <div className="navbar-header">
-		      <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span className="sr-only">Toggle navigation</span>
-		        <span className="icon-bar"></span>
-		        <span className="icon-bar"></span>
-		        <span className="icon-bar"></span>
-		      </button>
-		      <Link to="#" className="navbar-brand" >Yoane</Link>
-		    </div>
+import "./Header.css";
+import { useEffect } from "react";
 
-		    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      	<ul className="nav navbar-nav mu-menu navbar-right">
-			        <li><Link to="/">HOME</Link></li>
-			        <li><Link to="/#skills">COMPETENCES</Link></li>
-					<li><Link to="/#realisations">REALISATIONS</Link></li>
-					<li><Link to="/#experiences">EXPERIENCES</Link></li>
-		            <li><Link to="/#contact">CONTACT</Link></li>
-		      	</ul>
-		    </div>
-		  </div>
-		</nav>
-     );
-}
+export const Nav = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    };
 
-export const Header = () => {
-	return ( 
-		<header id="mu-header" className="" role="banner">
-			<div classNameName="container">
-				<Nav />
-			</div>
-		</header>
-	 );
-}
+    window.addEventListener("scroll", handleScroll);
 
-export const Footer = () => {
-	return (
-		<footer id="mu-footer" role="contentinfo">
-			<div className="container">
-				<div className="mu-footer-area">
-					<p className="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">softwaredesign</a>. All right reserved.</p>
-				</div>
-			</div>
-
-	</footer>
-	)
-}
-
-const PageLayout = ({children}) => {
-	return ( 
-		<main>
-			<Header />
-			<Banner />
-			{children}
-			<Footer />
-		</main>
-	);
-}
- 
-export default PageLayout;
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  return (
+    <header className="header">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="#" style={{ color: "#21185c" }}>
+            Yoane Idourah
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="d-flex flex-row-reverse collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/parcours">
+                  Parcours
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  Articles
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div className="porgess-container">
+        <div className="progress-bar" id="myBar"></div>
+      </div>
+    </header>
+  );
+};

@@ -1,60 +1,65 @@
-import './App.css';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
-import Home from './Home';
-import ReactArticle from './articles/competences/React';
-import NodeJsArticle from './articles/competences/Node';
-import ArchitectureArticle from './articles/competences/Architecture';
-import AutonomieArticle from './articles/competences/Autonomie';
-import LedearshipArticle from './articles/competences/Ledearship';
-import RigueurArticle from './articles/competences/Rigueur';
-import MobemboArticle from './articles/realisations/Mobembo';
-import RxvalidArticle from './articles/realisations/Rxvalid';
-import NotGDeployArticle from './articles/realisations/NotG';
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Home";
+import ReactArticle from "./articles/competences/React";
+import NodeJsArticle from "./articles/competences/Node";
+import ArchitectureArticle from "./articles/competences/Architecture";
+import AutonomieArticle from "./articles/competences/Autonomie";
+import LedearshipArticle from "./articles/competences/Ledearship";
+import RigueurArticle from "./articles/competences/Rigueur";
+import MobemboArticle from "./articles/realisations/Mobembo";
+import RxvalidArticle from "./articles/realisations/Rxvalid";
+import NotGDeployArticle from "./articles/realisations/NotG";
+import Parcours from "./component/Parcours";
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<Home/>
+    path: "/",
+    element: <Home />,
   },
   {
-    path:"/react-js",
-    element:<ReactArticle />
+    path: "/parcours",
+    element: <Parcours />,
   },
   {
-    path:"/node-js",
-    element:<NodeJsArticle />
+    path: "/react-js",
+    element: <ReactArticle />,
   },
   {
-    path:"/architecture",
-    element:<ArchitectureArticle />
+    path: "/node-js",
+    element: <NodeJsArticle />,
   },
   {
-    path:"/autonomie",
-    element:<AutonomieArticle/>
+    path: "/architecture",
+    element: <ArchitectureArticle />,
   },
   {
-    path:"/ledearship",
-    element:<LedearshipArticle/>
+    path: "/autonomie",
+    element: <AutonomieArticle />,
   },
   {
-    path:"/rigueur",
-    element:<RigueurArticle/>
+    path: "/ledearship",
+    element: <LedearshipArticle />,
   },
   {
-    path:"/mobembo",
-    element:<MobemboArticle/>
+    path: "/rigueur",
+    element: <RigueurArticle />,
   },
   {
-    path:"/rxvalid",
-    element:<RxvalidArticle/>
+    path: "/mobembo",
+    element: <MobemboArticle />,
   },
   {
-    path:"/notg",
-    element:<NotGDeployArticle/>
-  }
-])
+    path: "/rxvalid",
+    element: <RxvalidArticle />,
+  },
+  {
+    path: "/notg",
+    element: <NotGDeployArticle />,
+  },
+]);
 function App() {
-  return (<RouterProvider router={router} />);
+  return <RouterProvider router={router} />;
 }
 
 export default App;

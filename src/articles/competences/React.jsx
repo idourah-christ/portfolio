@@ -11,6 +11,7 @@ import {
   UnOrderList,
   OrderList,
 } from "../../component/Article";
+import { height, width } from "@mui/system";
 
 const ReactArticle = () => {
   return (
@@ -71,7 +72,7 @@ const ReactArticle = () => {
             construire notre image Docker.
           </ArticleParagraphe>
           <ArticleImage
-            style={{ height: "1000px", width: "100%" }}
+            style={{ width: "700px", height: "700px" }}
             src={Dockerfile}
           />
           <ArticleParagraphe>
@@ -92,7 +93,7 @@ const ReactArticle = () => {
             Nous devons également créer un fichier nginx.conf à la racine de
             notre projet pour configurer Nginx :
           </ArticleParagraphe>
-          <ArticleImage src={nginxConfig} />
+          <ArticleImage src={nginxConfig} style={{ width: "700px" }} />
           <ArticleParagraphe>
             Ce fichier indique à Nginx de servir les fichiers statiques de notre
             application React et de rediriger toutes les demandes vers
@@ -106,7 +107,7 @@ const ReactArticle = () => {
             nous pouvons maintenant construire notre image Docker et exécuter un
             conteneur.
           </ArticleParagraphe>
-          <ArticleImage src={DockerRunImg} />
+          <ArticleImage src={DockerRunImg} style={{ width: "700px" }} />
           <ArticleParagraphe>
             Accédez à `http://localhost` dans votre navigateur, et vous devriez
             voir votre application React en cours d'exécution.
