@@ -11,11 +11,12 @@ import MobemboArticle from "./articles/realisations/Mobembo";
 import RxvalidArticle from "./articles/realisations/Rxvalid";
 import NotGDeployArticle from "./articles/realisations/NotG";
 import Parcours from "./component/Parcours";
+import MainApp from "./code/App";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <MainApp />,
   },
   {
     path: "/parcours",
