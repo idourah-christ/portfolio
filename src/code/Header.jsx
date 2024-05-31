@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light">
+    <nav className="navbar navbar-expand-sm navbar-light" style={{backgroundColor:'#474580', color:"#ffffff"}}>
       <div className="container">
-        <Link className="navbar-brand" to="index.html">
+        <Link className="navbar-brand" to="index.html" style={{color:"#ffffff"}}>
           <i className="uil uil-user"></i> Yoane Idourah
         </Link>
 
@@ -25,24 +25,24 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link to="#about" className="nav-link">
-                <span data-hover="About">About</span>
-              </Link>
+              <a href="#about" className="nav-link">
+                <span data-hover="About" >About</span>
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="#project" className="nav-link">
-                <span data-hover="Projects">Projects</span>
-              </Link>
+              <a href="#realisation" className="nav-link">
+                <span data-hover="Réalisations">Réalisations</span>
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="#resume" className="nav-link">
-                <span data-hover="Resume">Resume</span>
-              </Link>
+              <a href="#skills" className="nav-link">
+                <span data-hover="Compétences">Compétences</span>
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="#contact" className="nav-link">
-                <span data-hover="Contact">Contact</span>
-              </Link>
+              <a href="#parcours" className="nav-link">
+                <span data-hover="parcours">Parcours</span>
+              </a>
             </li>
           </ul>
 

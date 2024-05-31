@@ -24,8 +24,11 @@ Version: 1.0
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
-.text-justify {
-  text-align: justify;
+
+#profile{
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
 }
 body,
 html {
@@ -288,9 +291,9 @@ button:focus {
   background-size: cover;
   background-color: #21185c;
   background-position: center center;
-  display: inline;
-  float: left;
   width: 100%;
+  text-align: justify;
+  padding-top:40px;
 }
 
 .mu-featured-area {
@@ -1145,14 +1148,9 @@ button:focus {
     padding: 0 10px;
   }
 
-  .mu-featured-slider-content h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
 
-  .mu-featured-slider-content p {
-    font-size: 12px;
-  }
+
+  
 
   .mu-primary-btn {
     font-size: 12px;

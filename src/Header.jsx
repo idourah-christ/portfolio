@@ -22,47 +22,30 @@ export const Nav = () => {
     };
   }, []);
   return (
-    <header className="header">
+    <header className="header" style={{backgroundColor:" #21185c"}}>
+      
       <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="#" style={{ color: "#21185c" }}>
-            Yoane Idourah
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="d-flex flex-row-reverse collapse navbar-collapse"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+  <div className="container-fluid d-flex flex-row-reverse">
+    <Link className="navbar-brand text-white" to="#" >Yoane Idourah</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row-reverse">
+      <li className="nav-item">
+                <Link className="nav-link active text-white" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/parcours">
+                <Link className="nav-link text-white" to="/parcours">
                   Parcours
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Articles
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      </ul>
+    </div>
+  </div>
+</nav>
       <div className="porgess-container">
         <div className="progress-bar" id="myBar"></div>
       </div>
