@@ -12,7 +12,7 @@ import {
   OrderList,
 } from "../../component/Article";
 
-const ArchitectureArticle = () => {
+const JwtArticle = () => {
   return (
     <Article>
       <ArticleHeader header={reactArticle.header}>
@@ -140,4 +140,4 @@ const ArchitectureArticle = () => {
   );
 };
 
-export default ArchitectureArticle;
+export default JwtArticle;

@@ -1,23 +1,41 @@
-import {Carousel} from "antd";
-import image from "./images/project/project-image01.png"
-import { ProjectCard } from "./Project";
+import {Card,Col, Divider, Row} from "antd";
 
-const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
+const boxStyles = {
+    boxShadow: '4px 4px 2px 1px rgba(0, 0, 255, .2)',
+    marginTop:16
   };
 
+const tech = ["Node JS", "REACT JS", "Docker & Kubernetes", "Git & GitOps"];
+const trans = ["Leadership", "Persévérance", "Communication"];
+const langs = ["Français", "Anglais", "Russe", "Rumba"]
 const Skills = () => {
     return ( 
-        <Carousel>
-            <ProjectCard style={contentStyle} src={image}  meta={{title:"Rxvalid ", description:"link to the project"}}/>
-            <ProjectCard style={contentStyle}  src={image}  meta={{title:"Patience ", description:"link to the project"}}/>
-            <ProjectCard style={contentStyle}  src={image}  meta={{title:"Node js ", description:"link to the project"}}/>
-            <ProjectCard style={contentStyle}  src={image}  meta={{title:"React ", description:"link to the project"}}/>
-        </Carousel>
+       <Row gutter={16}>
+         <Col span={8}  xs={24}>
+            <Divider>Techniques</Divider>
+            {tech.map((item, index) => (
+                <Card key={index} style={boxStyles}>
+                <p><b>{item}</b></p>
+            </Card>
+            ))}
+         </Col>
+         <Col span={8} xs={24}>
+            <Divider>Transverses</Divider>
+            {trans.map((item, index) => (
+                <Card key={index} style={boxStyles}>
+                    <p><b>{item}</b></p>
+                </Card>
+            ))}
+         </Col>
+         <Col span={8} xs={24}>
+            <Divider>Langues et hobbies</Divider>
+            {langs.map((item, index) => (
+                <Card key={index} style={boxStyles}>
+                <p><b>{item}</b></p>
+            </Card>
+            ))}
+         </Col>
+       </Row>
      );
 }
  

@@ -1,5 +1,5 @@
-import ArticleLayout from "../layouts/ArticleLayout";
 import "./Article.css";
+import { ArticleLayout } from "../code/Articles";
 
 export const ArticleImage = (props) => {
   return (
@@ -7,10 +7,13 @@ export const ArticleImage = (props) => {
   );
 };
 
+
 export const Article = (props) => {
   return (
-    <ArticleLayout>
-      <article className="article">{props.children}</article>
+    <ArticleLayout style={{padding:40}}>
+        <article className="container col-md-10">
+            {props.children}
+        </article>
     </ArticleLayout>
   );
 };

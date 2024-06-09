@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light" style={{backgroundColor:'#474580', color:"#ffffff"}}>
       <div className="container">
-        <Link className="navbar-brand" to="index.html" style={{color:"#ffffff"}}>
+        <Link className="navbar-brand" to="/" style={{color:"#ffffff"}}>
           <i className="uil uil-user"></i> Yoane Idourah
         </Link>
 
@@ -23,28 +23,7 @@ const Header = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <a href="#about" className="nav-link">
-                <span data-hover="About" >About</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#realisation" className="nav-link">
-                <span data-hover="Réalisations">Réalisations</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#skills" className="nav-link">
-                <span data-hover="Compétences">Compétences</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#parcours" className="nav-link">
-                <span data-hover="parcours">Parcours</span>
-              </a>
-            </li>
-          </ul>
+          {props.children}
 
           <ul className="navbar-nav ml-lg-auto">
             <div className="ml-lg-4">

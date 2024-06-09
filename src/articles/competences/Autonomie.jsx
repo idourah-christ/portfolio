@@ -1,4 +1,4 @@
-import ArticleLayout from "../../layouts/ArticleLayout";
+import { ArticleLayout } from "../../code/Articles";
 
 const AutonomieArticle = () => {
   return (
