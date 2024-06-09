@@ -112,10 +112,10 @@ const Articles = () => {
         <Row justify="center" style={{padding:16}}>
             {articles.map((article, index) => (
                 isEven(index) ? 
-                (<Col span={10} key={index}  xs={24}>
+                (<Col span={10} key={index} lg={8} md={8}   xs={24}>
                   <ArticleCard onClick={() => handleCardClick(article?.to)} style={cardStyle}  src={article?.image}  key={index} meta={{title:article.title, style:imageStyle, description:article?.text}}/>
                 </Col>) : 
-                (<Col span={10} key={index} xs={24} style={{marginLeft:25}}>
+                (<Col span={10} lg={8} md={8}  key={index} xs={24} style={{marginLeft:25}}>
                   <ArticleCard onClick={() => handleCardClick(article?.to)}  style={cardStyle}    src={article?.image}  key={index} meta={{title:article.title, style:imageStyle, description:article?.text}}/>
                 </Col>)
             ))}

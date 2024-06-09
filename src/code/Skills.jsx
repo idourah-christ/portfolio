@@ -11,7 +11,7 @@ const langs = ["Français", "Anglais", "Russe", "Rumba"]
 const Skills = () => {
     return ( 
        <Row gutter={16}>
-         <Col span={8}  xs={24}>
+         <Col lg={8} md={8}  xs={24}>
             <Divider>Techniques</Divider>
             {tech.map((item, index) => (
                 <Card key={index} style={boxStyles}>
@@ -19,7 +19,7 @@ const Skills = () => {
             </Card>
             ))}
          </Col>
-         <Col span={8} xs={24}>
+         <Col lg={8} md={8}  xs={24}>
             <Divider>Transverses</Divider>
             {trans.map((item, index) => (
                 <Card key={index} style={boxStyles}>
@@ -27,7 +27,7 @@ const Skills = () => {
                 </Card>
             ))}
          </Col>
-         <Col span={8} xs={24}>
+         <Col xs={24} lg={8} md={8} >
             <Divider>Langues et hobbies</Divider>
             {langs.map((item, index) => (
                 <Card key={index} style={boxStyles}>

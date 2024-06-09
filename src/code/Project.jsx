@@ -16,13 +16,13 @@ export const ProjectCard = (props) => {
 const Project = () => {
     return ( 
         <Row gutter={16} style={{paddingTop:20}}>
-            <Col span={8} xs={24}>
+            <Col lg={8} md={8} xs={24}>
                 <ProjectCard style={boxStyles} src={image}  meta={{title:"Rxvalid ", description:"link to the project"}}/>
             </Col>
-            <Col span={8} xs={24}>
+            <Col  lg={8} md={8} xs={24}>
                 <ProjectCard style={boxStyles} src={image}  meta={{title:"Mobembo+", description:"link to the project"}}/>
             </Col>
-            <Col span={8} xs={24}>
+            <Col lg={8} md={8} xs={24}>
                 <ProjectCard style={boxStyles} src={image}  meta={{title:"Mobembo+", description:"link to the project"}}/>
             </Col>
         </Row>
