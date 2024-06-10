@@ -3,19 +3,28 @@ import { Article } from "../../component/Article";
 const LedearshipArticle = () => {
   return (
     <Article>
-      <h4>Dans la peau d’un leader </h4>
-
-      <p>
-        En septembre 2019, une année après mon arrivée en Ukraine pour les
-        études. J’e découvrais l’univers du <b>stroïka</b> le mot russe pour
-        designer construction. Les étudiants étrangers ne pouvant pas travailler
-        d’une façon officielle en Ukraine avaient trouvé une sorte d’activité.
-        Bien qu’illégale, ces petits boulots leurs permettaient d’avoir de quoi
-        se nourrir pour les uns et financer leurs études pour d’autres. <br />
-        <b>Stroîka,</b> était l’appellation qu’on faisait de ces petits boulots
-        qui pour la plupart était des tâches à faire sur des chantiers de
-        constructions.
-      </p>
+      <div>
+        <h4>Dans la peau d’un leader </h4>
+        <p>
+          Le leadership est pour moi la capacité d'avancer quand toutes les
+          conditions sont reunies pour reculer. J'ai été très tôt poussé par ma
+          mère à prendre des initiatives de leader. Je me souviens qu'à l'age de
+          8 ans elle me convia la lecture du discours pour la fête
+          d'anniversaire du fils de sa collègue.
+        </p>
+        <p>
+          En septembre 2019, une année après mon arrivée en Ukraine pour les
+          études. J’e découvrais l’univers du <b>stroïka</b> le mot russe pour
+          designer construction. Les étudiants étrangers ne pouvant pas
+          travailler d’une façon officielle en Ukraine avaient trouvé une sorte
+          d’activité. Bien qu’illégale, ces petits boulots leurs permettaient
+          d’avoir de quoi se nourrir pour les uns et financer leurs études pour
+          d’autres. <br />
+          <b>Stroîka,</b> était l’appellation qu’on faisait de ces petits
+          boulots qui pour la plupart était des tâches à faire sur des chantiers
+          de constructions.
+        </p>
+      </div>
 
       <div>
         <h5>La philosophie du stroïka.</h5>
