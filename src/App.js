@@ -34,9 +34,9 @@ const router = createBrowserRouter([
     element: <AutonomieArticle />,
   },
   {
-    path: "/articles/ledearship",
+    path: "/articles/leadership",
     element: <LedearshipArticle />,
-  }
+  },
 ]);
 function App() {
   return <RouterProvider router={router} />;
