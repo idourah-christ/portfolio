@@ -96,8 +96,13 @@ const articles = [
           frontières de mon pays et même du continent.`,
   },
   {
-    title: "Une histoire qui commence, Un chapitre se ferme",
+    title: "NotG deploy",
     image: lacAnnecy,
+    to: "notg-deploy",
+    text: `  En janvier 2023 j’avais été recruté chez CANAL+ en tant qu’alternant
+    au poste d’apprentis ingénieur automatisation. Mon travail consistait
+    à analyser les résultats des tests automatisés afin de produire un
+    rapport journalier.`,
   },
   { title: "Un stage pour une alternance chez Canal+", image: alternance },
 ];
@@ -135,7 +140,7 @@ const Articles = () => {
         {articles.map((article, index) =>
           isEven(index) ? (
             <Col
-              span={10}
+              span={4}
               key={index}
               lg={8}
               md={8}

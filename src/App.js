@@ -7,6 +7,7 @@ import LedearshipArticle from "./articles/competences/Ledearship";
 import MainApp from "./code/Home";
 import Articles from "./code/Articles";
 import JwtArticle from "./articles/competences/Jwt";
+import NotGDeployArticle from "./articles/competences/NotG";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/articles/leadership",
     element: <LedearshipArticle />,
+  },
+  {
+    path: "/articles/notg-deploy",
+    element: <NotGDeployArticle />,
   },
 ]);
 function App() {

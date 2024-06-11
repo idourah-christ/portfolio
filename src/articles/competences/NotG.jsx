@@ -1,29 +1,65 @@
-import ArticleLayout from "../../layouts/ArticleLayout";
+import { Article } from "../../component/Article";
 
 const NotGDeployArticle = () => {
   return (
-    <ArticleLayout>
+    <Article>
       <article>
         <p>
           Dans le monde de la technologie en constante évolution, rester à la
-          pointe est essentiel pour les entreprises afin de maintenir leur
-          avantage concurrentiel. Pour CANAL+, le principal fournisseur de
-          télévision français, l'innovation n'est pas seulement un objectif mais
-          une nécessité. Dans cet article, je vous propose de voir ensemble la
-          migration d’un projet en python 2 vers Node JS.{" "}
+          pointe est un grand défis pour les entreprises. <br />
+          Chez CANAL+, l'innovation n'est pas seulement un objectif mais une
+          nécessité. Je vous propose de voir ensemble la migration d’un projet
+          en python 2 vers Node JS.{" "}
         </p>
 
-        <h4>Et si tu faisais un peu de dev ? </h4>
+        <div>
+          <h5>Bienvenue dans l'équipe auto 😃 </h5>
 
-        <p>
-          En janvier 2023 j’avais été recruté chez CANAL+ en tant qu’alternant
-          au poste d’apprentis ingénieur automatisation. Mon travail consistait
-          à analyser les résultats des tests automatisés afin de produire un
-          rapport journalier. Après avoir fait mes preuves lors de l’ajout d’une
-          fonctionnalité dans le CRM de gestion de tests fait maison, mon maitre
-          d’apprentissage avait décidé de me confier la migration d’un projet
-          initialement en python 2 vers Node JS.
-        </p>
+          <p>
+            En janvier 2023 j’ai été recruté chez CANAL+ en tant qu’alternant au
+            poste d’apprentis ingénieur automatisation. Mon travail consistait à
+            analyser les résultats des tests pour rediger un rapport journalier.
+            En tant qu'équipe automatisation notre mission était de concevoir et
+            maintenir des pipelines de lancement de tests sur des décodeurs.
+          </p>
+          <p>
+            Les tests s'excutant toute la nuit, j'analisai les résultats le
+            matin à l'aide d'outils de visualisation. Je detectai les tests
+            ayant échoués pour en déterminer les causes.Je rédigeai ensuite un
+            rapport détaillé que je transferai à d'autres équipes de la chaine
+            de validation qui l'utilisaient pour remonter des bugs, des
+            régressions ou apporter des corrections.
+          </p>
+          <p>
+            Une fois le rapport transmis, je passai le reste de temps à corriger
+            et mettre à jours des tests.
+          </p>
+        </div>
+
+        <div>
+          <h5>Et si tu faisais un peu de dev ? </h5>
+          <p>
+            Après avoir passé 5 mois à analyser et corriger des tests, mon
+            maître d'apprentissage me proposa de faire du développement web.
+            <br /> Il me confia le développement d'une nouvelle fonctionnalité
+            sur l'outil de gestion de test qui était développé par un membre de
+            l'équipe.
+          </p>
+          <p>
+            Il s'agissait d'une application web conçu avec du Javascript et
+            Backbone JS, un framework très utilisé à partir de 2011 et qui avait
+            depuis perdu en popularité avec l'apparution de framework plus
+            morderne comme React et Angular.
+            <br />
+            Je n'avais aucune expérience en Backbone JS. J'ai décidé de faire
+            des récherches sur internet pour en apprendre d'avantage.
+          </p>
+          <p>
+            Dans mes recherches, je découvri le site officiel de Backbone JS. Il
+            me fallait comprendre la philosophie du framework pour ajouter la
+            fonctionnalité sans casser les fonctionnalités existantes
+          </p>
+        </div>
 
         <h4>A dieu python 2</h4>
         <p>
@@ -99,7 +135,7 @@ const NotGDeployArticle = () => {
           futures dans l'intégration technologique.
         </p>
       </article>
-    </ArticleLayout>
+    </Article>
   );
 };
 
