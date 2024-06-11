@@ -87,7 +87,14 @@ const articles = [
     to: "react-js",
   },
 
-  { title: "Un voyage qui a tout changé", image: trip },
+  {
+    title: "Un voyage qui a tout changé",
+    image: trip,
+    to: "autonomie",
+    text: `En avril 2018 je quittai mon pays la République du Congo pour
+          continuer mes études en Ukraine. Ce voyage était mon premier hors des
+          frontières de mon pays et même du continent.`,
+  },
   {
     title: "Une histoire qui commence, Un chapitre se ferme",
     image: lacAnnecy,
