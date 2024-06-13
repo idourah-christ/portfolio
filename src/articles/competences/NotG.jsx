@@ -31,8 +31,8 @@ const NotGDeployArticle = () => {
             régressions ou apporter des corrections.
           </p>
           <p>
-            Une fois le rapport transmis, je passai le reste de temps à corriger
-            et mettre à jours des tests.
+            Une fois le rapport transmis, je passai le reste du temps à corriger
+            et mettre à jours les tests.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const NotGDeployArticle = () => {
           <p>
             Il s'agissait d'une application web conçu avec du Javascript et
             Backbone JS, un framework très utilisé à partir de 2011 et qui avait
-            depuis perdu en popularité avec l'apparution de framework plus
+            depuis perdu sa popularité avec l'apparution de framework plus
             morderne comme React et Angular.
             <br />
             Je n'avais aucune expérience en Backbone JS. J'ai décidé de faire
@@ -57,23 +57,26 @@ const NotGDeployArticle = () => {
           <p>
             Dans mes recherches, je découvri le site officiel de Backbone JS. Il
             me fallait comprendre la philosophie du framework pour ajouter la
-            fonctionnalité sans casser les fonctionnalités existantes
+            fonctionnalité sans casser les fonctionnalités existante.
           </p>
         </div>
 
-        <h4>A dieu python 2</h4>
-        <p>
-          Il s’agissait d’une application serveur permettant de lancer
-          l’exécution d’un ou plusieurs scripts. Elle faisait partie d’une
-          chaine de services qui automatisaient le lancement de plus 7000 tests
-          end-to-end par jours. Les informations relatives à l’exécutions des
-          scripts devraient être renvoyées aux applications clientes en temps
-          réel. L’application avait une dépendance majeure a une bibliothèque
-          externe qui n’était plus maintenue en python 2 et plus disponible en
-          Python 3. Après quelque recherche j’avais trouvé une alternative à
-          cette bibliothèque en Node JS et avais proposé de migrer l’application
-          en Node JS.
-        </p>
+        <div>
+          <h5>Eureka 🥸</h5>
+          <p>
+            En s'inspirant de ce que j'ai appris sur le site de backbone js,
+            j'ai pu ajouter une page sur l'application. Elle était là, la
+            fameuse page blanche. J'avais compris comment ajouter des pages à
+            l'application il me fallait à présent ajouter les éléments
+            graphiques et du style (css) à mes pages.
+          </p>
+          <p>
+            L'expérience que j'ai des bibliothèques Javascript comme Jquery, des
+            frameworks comme Angular et React JS me permis de mieux comprendre
+            la philosophie de Backbone. Faire du Backbone c'est, créer un
+            modèle, une vue et une template.
+          </p>
+        </div>
 
         <h4>C’est maintenant ou jamais </h4>
 
