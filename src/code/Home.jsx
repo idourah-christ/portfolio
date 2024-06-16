@@ -14,17 +14,13 @@ const aboutParagrapheStyle = {
 };
 
 const navItems = [
-  { href: "#about", label: "About", tag: "a" },
+  { href: "#about", label: "Qui-je-suis", tag: "a" },
   { href: "#realisation", label: "Projets", tag: "a" },
   { href: "#parcours", label: "Parcours", tag: "a" },
-  { href: "/articles", label: "Articles", tag: "Link" },
+  { href: "/competences", label: "Compétences", tag: "Link" },
 ];
 
-const specialities = [
-  "Ingénieur logiciel",
-  "Architecte logiciel",
-  "Apprenti DevOps",
-];
+const specialities = ["Ingénieur logiciel", "Architecte logiciel", "DevOps"];
 const Nav = (props) => {
   return (
     <ul className="navbar-nav mx-auto">

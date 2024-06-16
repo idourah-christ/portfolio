@@ -108,8 +108,8 @@ const articles = [
 ];
 
 const navItems = [
-  { to: "/", label: "About" },
-  { to: "/articles", label: "Articles" },
+  { to: "/", label: "Qui-je-suis" },
+  { to: "/competences", label: "Compétences" },
 ];
 
 export const ArticleLayout = (props) => {
