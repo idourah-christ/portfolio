@@ -96,7 +96,7 @@ const articles = [
           frontières de mon pays et même du continent.`,
   },
   {
-    title: "NotG deploy",
+    title: "Comment j'ai découvert backbone JS.",
     image: lacAnnecy,
     to: "notg-deploy",
     text: `  En janvier 2023 j’avais été recruté chez CANAL+ en tant qu’alternant
