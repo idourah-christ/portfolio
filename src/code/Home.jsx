@@ -5,6 +5,7 @@ import Project from "./Project";
 import Parcours from "./Experiences";
 import Skills from "./Skills";
 import { useState } from "react";
+import { Divider } from "antd";
 
 const aboutParagrapheStyle = {
   WebkitLineClamp: 3,
@@ -136,6 +137,24 @@ const MainApp = () => {
         </div>
       </section>
       <Parcours />
+
+      <section>
+        <Divider />
+        <div className="container">
+          <h4>Contactez moi</h4>
+          <form>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" className="form-control col-md-6" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea rows="10" className="form-control col-md-6"></textarea>
+            </div>
+            <button className="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+      </section>
 
       <Footer />
     </main>

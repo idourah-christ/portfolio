@@ -31,7 +31,10 @@ const Project = () => {
         <ProjectCard
           style={boxStyles}
           src={image}
-          meta={{ title: "Mobembo+", description: "link to the project" }}
+          meta={{
+            title: "Compilateur en C++",
+            description: "link to the project",
+          }}
         />
       </Col>
       <Col lg={8} md={8} xs={24}>

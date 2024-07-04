@@ -8,6 +8,7 @@ import MainApp from "./code/Home";
 import Articles from "./code/Articles";
 import JwtArticle from "./articles/competences/Jwt";
 import NotGDeployArticle from "./articles/competences/NotG";
+import CompilerArticle from "./articles/competences/Compiler";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/articles/notg-deploy",
     element: <NotGDeployArticle />,
+  },
+  {
+    path: "/articles/compiler",
+    element: <CompilerArticle />,
   },
 ]);
 function App() {

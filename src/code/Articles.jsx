@@ -21,8 +21,6 @@ const cardStyle = {
   marginTop: 30,
   boxShadow: "12px 12px 2px 1px rgba(0, 0, 255, .2)",
   border: "1px solid rgba(0, 0, 255, .2)",
-  minHeight: 300,
-  maxHeight: 460,
 };
 export const ArticleCard = (props) => {
   return (
@@ -104,7 +102,17 @@ const articles = [
     à analyser les résultats des tests automatisés afin de produire un
     rapport journalier.`,
   },
-  { title: "Un stage pour une alternance chez Canal+", image: alternance },
+  {
+    title: "Compilateur en C++",
+    image: alternance,
+    to: "compiler",
+    text: `En 2022 pendant que je préparais le mastère
+    en expert génie logiciel à INTECH j’ai eu un cours intitulé
+    ‘compilateur ‘. Le cours avait pour but d’apprendre au futur expert
+    logiciel que nous étions mes collègues et moi, le fonctionnement
+    interne d’un compilateur ainsi que des langages de programmations
+    compilés`,
+  },
 ];
 
 const navItems = [
@@ -142,10 +150,10 @@ const Articles = () => {
             <Col
               span={4}
               key={index}
-              lg={8}
-              md={8}
+              lg={9}
+              md={9}
               xs={24}
-              style={{ marginRight: 10 }}
+              style={{ marginRight: 50 }}
             >
               <ArticleCard
                 onClick={() => handleCardClick(article?.to)}
@@ -160,7 +168,7 @@ const Articles = () => {
               />
             </Col>
           ) : (
-            <Col span={10} lg={8} md={8} key={index} xs={24}>
+            <Col span={10} lg={9} md={9} key={index} xs={24}>
               <ArticleCard
                 onClick={() => handleCardClick(article?.to)}
                 style={cardStyle}
