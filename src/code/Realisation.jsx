@@ -92,7 +92,27 @@ const articles = [
     text: `En avril 2018 je quittai mon pays la République du Congo pour
           continuer mes études en Ukraine. Ce voyage était mon premier hors des
           frontières de mon pays et même du continent.`,
-  }
+  },
+  {
+    title: "Comment j'ai découvert backbone JS.",
+    image: lacAnnecy,
+    to: "notg-deploy",
+    text: `  En janvier 2023 j’avais été recruté chez CANAL+ en tant qu’alternant
+    au poste d’apprentis ingénieur automatisation. Mon travail consistait
+    à analyser les résultats des tests automatisés afin de produire un
+    rapport journalier.`,
+  },
+  {
+    title: "Compilateur en C++",
+    image: alternance,
+    to: "compiler",
+    text: `En 2022 pendant que je préparais le mastère
+    en expert génie logiciel à INTECH j’ai eu un cours intitulé
+    ‘compilateur ‘. Le cours avait pour but d’apprendre au futur expert
+    logiciel que nous étions mes collègues et moi, le fonctionnement
+    interne d’un compilateur ainsi que des langages de programmations
+    compilés`,
+  },
 ];
 
 const navItems = [
