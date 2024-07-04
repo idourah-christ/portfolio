@@ -15,7 +15,7 @@ const aboutParagrapheStyle = {
 
 const navItems = [
   { href: "#about", label: "Qui-je-suis", tag: "a" },
-  { href: "#realisation", label: "Projets", tag: "a" },
+  { href: "#realisation", label: "Réalisations", tag: "a" },
   { href: "#parcours", label: "Parcours", tag: "a" },
   { href: "/competences", label: "Compétences", tag: "Link" },
   { href:"#contact", label:"Contact", tag:"a"}
