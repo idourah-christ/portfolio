@@ -1,5 +1,6 @@
 import { Card, Col, Row } from "antd";
 import image from "./images/project/project-image01.png";
+import { useNavigate } from "react-router-dom";
 
 const { Meta } = Card;
 const boxStyles = {
@@ -8,6 +9,7 @@ const boxStyles = {
 export const ProjectCard = (props) => {
   return (
     <Card
+      {...props}
       hoverable
       style={props.style}
       title={props.title}
@@ -18,13 +20,18 @@ export const ProjectCard = (props) => {
   );
 };
 const Project = () => {
+  const navigate = useNavigate();
+
+  const handleOnClick = (link) => {
+    navigate(link);
+  }
   return (
     <Row gutter={16} style={{ paddingTop: 20 }}>
       <Col lg={8} md={8} xs={24}>
         <ProjectCard
           style={boxStyles}
           src={image}
-          meta={{ title: "Rxvalid ", description: "link to the project" }}
+          meta={{ title: "Rxvalid "}}
         />
       </Col>
       <Col lg={8} md={8} xs={24}>
@@ -33,15 +40,16 @@ const Project = () => {
           src={image}
           meta={{
             title: "Compilateur en C++",
-            description: "link to the project",
           }}
+          onClick={() => handleOnClick("/articles/compiler")}
         />
       </Col>
       <Col lg={8} md={8} xs={24}>
         <ProjectCard
           style={boxStyles}
           src={image}
-          meta={{ title: "NotG deploy", description: "link to the project" }}
+          meta={{ title: "Je decouvre Backbone JS"}}
+          onClick={() => handleOnClick("/articles/notg-deploy")}
         />
       </Col>
     </Row>

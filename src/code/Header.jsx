@@ -24,15 +24,6 @@ const Header = (props) => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           {props.children}
-
-          <ul className="navbar-nav ml-lg-auto">
-            <div className="ml-lg-4">
-              <div className="color-mode d-lg-flex justify-content-center align-items-center">
-                <i className="color-mode-icon"></i>
-                Color mode
-              </div>
-            </div>
-          </ul>
         </div>
       </div>
     </nav>

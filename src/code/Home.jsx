@@ -18,7 +18,7 @@ const navItems = [
   { href: "#about", label: "Qui-je-suis", tag: "a" },
   { href: "#realisation", label: "Projets", tag: "a" },
   { href: "#parcours", label: "Parcours", tag: "a" },
-  { href: "/competences", label: "Compétences", tag: "Link" },
+  { href: "#skills", label: "Compétences", tag: "Link" },
 ];
 
 const specialities = ["Ingénieur logiciel", "Architecte logiciel", "DevOps"];
@@ -89,14 +89,12 @@ const MainApp = () => {
                 </section>
 
                 <div className="custom-btn-group mt-4">
-                  <Link to="#" className="btn mr-lg-2 custom-btn">
-                    <i className="uil uil-file-alt"></i> Download Resume
-                  </Link>
+                 
                   <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="btn custom-btn custom-btn-bg custom-btn-link"
                   >
-                    {isOpen ? "Lire moins.." : "Lire plus ..."}
+                    {isOpen ? "Lire moins ..." : "Lire plus ..."}
                   </button>
                 </div>
               </div>
