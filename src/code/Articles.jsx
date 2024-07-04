@@ -7,8 +7,6 @@ import jwt from "./images/jwt.png";
 import leadership from "./images/leadership.jpg";
 import trip from "./images/trip.jpg";
 import jackson from "./images/jackson.jpg";
-import lacAnnecy from "./images/lacAnnecy.jpg";
-import alternance from "./images/alternance.png";
 
 const { Meta } = Card;
 const { Content } = Layout;
@@ -18,7 +16,7 @@ const imageStyle = {
   borderBottom: "0px",
 };
 const cardStyle = {
-  marginTop: 30,
+  marginBottom: 30,
   boxShadow: "12px 12px 2px 1px rgba(0, 0, 255, .2)",
   border: "1px solid rgba(0, 0, 255, .2)",
 };
@@ -70,7 +68,11 @@ const articles = [
     travailler d’une façon officielle en Ukraine avaient trouvé une sorte
     d’activité.`,
   },
-  { title: "Comment j'ai appris l'anglais", image: jackson },
+  { title: 
+    "Comment j'ai appris l'anglais", 
+    image: jackson, to:'english', 
+    text:` Une langue est pour moi un scapel qui me permet, tel un chirurgient
+         d'inciser la culture et l'histoire d'un peuple pour en decouvrir les entrailles`},
   {
     title: "Signature et Chiffrement des données avec JWT",
     to: "jwt",

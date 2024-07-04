@@ -9,6 +9,7 @@ import Articles from "./code/Articles";
 import JwtArticle from "./articles/competences/Jwt";
 import NotGDeployArticle from "./articles/competences/NotG";
 import CompilerArticle from "./articles/competences/Compiler";
+import EnglishArticle from "./articles/competences/English";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
     element: <Articles />,
   },
   {
-    path: "articles/react-js",
+    path: "/articles/react-js",
     element: <ReactArticle />,
+  },
+  {
+    path:'/articles/english',
+    element:<EnglishArticle />
   },
   {
     path: "/articles/bcrypt",

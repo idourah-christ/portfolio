@@ -136,7 +136,7 @@ const MainApp = () => {
       </section>
       <Parcours />
 
-      <section>
+      <section id="contact">
         <Divider />
         <div className="container">
           <h4>Contactez moi</h4>
