@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Project from "./Project";
@@ -18,7 +17,8 @@ const navItems = [
   { href: "#about", label: "Qui-je-suis", tag: "a" },
   { href: "#realisation", label: "Projets", tag: "a" },
   { href: "#parcours", label: "Parcours", tag: "a" },
-  { href: "#skills", label: "Compétences", tag: "Link" },
+  { href: "/competences", label: "Compétences", tag: "Link" },
+  { href:"#contact", label:"Contact", tag:"a"}
 ];
 
 const specialities = ["Ingénieur logiciel", "Architecte logiciel", "DevOps"];
