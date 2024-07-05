@@ -3,8 +3,8 @@ import { Article } from "../../component/Article";
 const CompilerArticle = () => {
   return (
     <Article>
+      <h3>Un compilateur en c++ pour le langage INTECH </h3>
       <div>
-        <h4>Un code complexe pour un langage simple </h4>
         <p>
           En 2022 pendant que je préparais le mastère "expert génie logiciel" à
           INTECH.
@@ -16,7 +16,7 @@ const CompilerArticle = () => {
           concevoir avec un collègue de classe un compilateur qu’il nous fallait
           envoyer au professeur à la fin du semestre et réussir un examen écrit.
         </p>
-        <h4>C’est quoi un compilateur ?</h4>
+        <h5>C’est quoi un compilateur ?</h5>
         <p>
           Un compilateur est un programme qui traite les instructions écrites
           dans un langage de programmation donné pour les traduire en langage
@@ -29,7 +29,7 @@ const CompilerArticle = () => {
         </p>
       </div>
       <div>
-        <h4>7 ans plus tard</h4>
+        <h5>7 ans plus tard</h5>
         <p>
           J’ai découvert la programmation informatique en 2016, en lisant un
           article sur le site internet ‘openclassroom’. L’article était une
@@ -53,7 +53,7 @@ const CompilerArticle = () => {
         </p>
       </div>
       <div>
-        <h4>Est-ce vraiment une bonne idée ?</h4>
+        <h5>Est-ce vraiment une bonne idée ?</h5>
         <p>
           Le professeur nous avait laissé le choix de la technologie à utiliser
           pour concevoir le compilateur. Ayant fait du C++ dans le passé, j’ai
@@ -66,7 +66,7 @@ const CompilerArticle = () => {
         </p>
       </div>
       <div>
-        <h4>Du code qui functionne</h4>
+        <h5>Du code qui functionne</h5>
         <p>
           Notre objectif était de rendre au professeur un compilateur
           fonctionnel, qui prenne en entrée un fichier avec une extension
@@ -79,7 +79,7 @@ const CompilerArticle = () => {
         </p>
       </div>
       <div>
-        <h4>Vous n'avez que quatre semaines</h4>
+        <h5>Vous n'avez que quatre semaines</h5>
         <p>
           Le projet s'étendant sur quatre semaines, je consacrais deux jours
           pour travailler dessus. Mon collègue n'ayant jamais fait du C++ dans
@@ -122,7 +122,7 @@ const CompilerArticle = () => {
         </p>
       </div>
       <div>
-        <h4>On n'est pas tous les mêmes</h4>
+        <h5>On n'est pas tous les mêmes</h5>
         <p>
           Cette réalisation m'a permis d'apprendre à travailler avec un collègue
           qui n'a pas la même compétence que moi, de mieux comprendre comment

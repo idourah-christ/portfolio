@@ -10,6 +10,7 @@ import JwtArticle from "./articles/competences/Jwt";
 import NotGDeployArticle from "./articles/competences/NotG";
 import CompilerArticle from "./articles/competences/Compiler";
 import EnglishArticle from "./articles/competences/English";
+import RxvalidArticle from "./articles/competences/Rxvalid";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
     element: <ReactArticle />,
   },
   {
-    path:'/articles/english',
-    element:<EnglishArticle />
+    path: "/articles/english",
+    element: <EnglishArticle />,
   },
   {
     path: "/articles/bcrypt",
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/articles/compiler",
     element: <CompilerArticle />,
+  },
+  {
+    path: "/articles/rxvalid",
+    element: <RxvalidArticle />,
   },
 ]);
 function App() {

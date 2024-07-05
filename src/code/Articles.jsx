@@ -1,5 +1,5 @@
 import Header from "./Header";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Card, Col, Layout, Row } from "antd";
 import hashing from "./images/hashing.png";
 import dockerReact from "./images/docker-react.png";
@@ -16,7 +16,7 @@ const imageStyle = {
   borderBottom: "0px",
 };
 const cardStyle = {
-  marginBottom: 30,
+  marginTop: 30,
   boxShadow: "12px 12px 2px 1px rgba(0, 0, 255, .2)",
   border: "1px solid rgba(0, 0, 255, .2)",
 };
@@ -39,9 +39,9 @@ const Nav = (props) => {
     <ul className="navbar-nav mx-auto">
       {props.items.map((item, index) => (
         <li className="nav-item" key={index}>
-          <Link to={item.to} className="nav-link">
+          <a href={item.href} className="nav-link">
             <span data-hover={item.label}>{item.label}</span>
-          </Link>
+          </a>
         </li>
       ))}
     </ul>
@@ -68,11 +68,13 @@ const articles = [
     travailler d’une façon officielle en Ukraine avaient trouvé une sorte
     d’activité.`,
   },
-  { title: 
-    "Comment j'ai appris l'anglais", 
-    image: jackson, to:'english', 
-    text:` Une langue est pour moi un scapel qui me permet, tel un chirurgient
-         d'inciser la culture et l'histoire d'un peuple pour en decouvrir les entrailles`},
+  {
+    title: "Comment j'ai appris l'anglais",
+    image: jackson,
+    to: "english",
+    text: ` Une langue est pour moi un scapel qui me permet, tel un chirurgient
+         d'inciser la culture et l'histoire d'un peuple pour en decouvrir les entrailles`,
+  },
   {
     title: "Signature et Chiffrement des données avec JWT",
     to: "jwt",
@@ -94,12 +96,15 @@ const articles = [
     text: `En avril 2018 je quittai mon pays la République du Congo pour
           continuer mes études en Ukraine. Ce voyage était mon premier hors des
           frontières de mon pays et même du continent.`,
-  }
+  },
 ];
 
 const navItems = [
-  { to: "/", label: "Qui-je-suis" },
-  { to: "/competences", label: "Compétences" },
+  { href: "/#about", label: "Qui-je-suis", tag: "a" },
+  { href: "/#realisation", label: "Réalisations", tag: "a" },
+  { href: "/#parcours", label: "Parcours", tag: "a" },
+  { href: "/competences", label: "Compétences", tag: "Link" },
+  { href: "/#contact", label: "Contact", tag: "a" },
 ];
 
 export const ArticleLayout = (props) => {
@@ -135,7 +140,7 @@ const Articles = () => {
               lg={9}
               md={9}
               xs={24}
-              style={{ marginRight: 50 }}
+              style={{ marginRight: 10 }}
             >
               <ArticleCard
                 onClick={() => handleCardClick(article?.to)}
