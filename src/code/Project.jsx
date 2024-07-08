@@ -35,7 +35,7 @@ const Project = () => {
         <ProjectCard
           style={boxStyles}
           src={rxvalid}
-          meta={{ title: "Rxvalid " }}
+          meta={{ title: "Rxvalid entity manager" }}
           onClick={() => handleOnClick("/articles/rxvalid")}
         />
       </Col>

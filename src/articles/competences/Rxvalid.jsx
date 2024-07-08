@@ -4,8 +4,9 @@ import { Article } from "../../component/Article";
 const RxvalidArticle = () => {
   return (
     <Article>
-      <h3>Contexte de réalisation</h3>
+      
       <div>
+      <h3>Rxvalid entity manager</h3>
         <p>
           En juillet 2023 mon maître d’apprentissage m’a confié la
           responsabilité d’ajouter une nouvelle fonctionnalité sur le logiciel
@@ -14,7 +15,7 @@ const RxvalidArticle = () => {
         </p>
       </div>
       <div>
-        <h4>Qu’est-ce que RXVALID ? </h4>
+        <h4>Qu’est-ce que Rxvalid ? </h4>
         <p>
           C’est un logiciel conçu par Canal Plus, qui permet de gérer une
           compagne de test end-to-end. L’outil permet de créer des scénarios et
@@ -25,24 +26,25 @@ const RxvalidArticle = () => {
         <p>
           La fonctionnalité devrait permettre de modifier les informations d’un
           scénario en fonction du profil choisi.
-        </p>{" "}
-      </div>
-      <div>
-        <h4>Enjeux </h4>
-        <p>
-          C’était occasion était pour moi une opportunité de faire mes preuves
-          au sein de l’équipe. J’avais été recruté pour une alternance divisée
-          en deux phases, dans la première phase il fallait analyser les
-          résultats des tests pour déterminer la cause des échecs de certains
-          scénario. Dans la deuxième phase il me fallait utiliser mes
-          compétences d’ingénieur logiciel pour faire évoluer l’outil
-          qu’utilisait l’équipe (RXVALID). Il était important pour moi de
-          réussir l’ajout de cette fonctionnalité pour la seconde phase de mon
-          alternance.{" "}
         </p>
       </div>
       <div>
-        <h4>Risques</h4>
+        <h4>Une alternance en deux phases</h4>
+        <p>
+          Cette occasion était pour moi une opportunité de faire mes preuves
+          au sein de l’équipe. J’avais été recruté pour une alternance divisée
+          en deux phases, dans la première phase il fallait analyser les
+          résultats des tests pour déterminer la cause des échecs de certains
+          scénario.
+        </p>
+        <p> Dans la deuxième phase il me fallait utiliser mes
+          compétences d’ingénieur logiciel pour faire évoluer l’outil
+          qu’utilisait l’équipe (RXVALID). <br/>Il était important pour moi de
+          réussir l’ajout de cette fonctionnalité pour la seconde phase de mon
+          alternance.</p>
+      </div>
+      <div>
+        <h4>Le diable se cache dans l'implémentation</h4>
         <p>
           Je craignais d’apporter une nouvelle régression sur RXVALID en
           ajoutant la nouvelle fonctionnalité. RXVALID était une SPA (Single
@@ -53,14 +55,14 @@ const RxvalidArticle = () => {
         </p>
       </div>
       <div>
-        <h4>Objectifs </h4>
+        <h4>Objectif</h4>
         <p>
           L’objectif était de rendre possible la modification d’informations
           d’un scénario en choisissant le profile que l’on souhaite modifier.
         </p>
       </div>
       <div>
-        <h4>Étapes</h4>
+        <h4>Bien comprendre le besoin avant tout</h4>
         <p>
           J’ai commencé par prendre connaissance des spécifications de la
           nouvelle fonctionnalité. Après avoir pris connaissance des
@@ -76,9 +78,16 @@ const RxvalidArticle = () => {
           présente en base de données. Après la création de la classe j’ai
           apporté quelques modifications sur le frontend en ajoutant un
           formulaire HTML et du code Javascript pour gérer l’interaction avec
-          l’utilisateur. Au bout d’une semaine de travail, j’ai pu ajouter la
-          fonctionnalité et la déployer. Les retours de la part de mon maître
-          d’apprentissage fut très positif et marqua le début de ma deuxième
+          l’utilisateur.
+        </p>
+        
+      </div>
+      <div>
+        <h4>Plus de mal que de peur</h4>
+        <p>
+        Au bout d’une semaine de travail, j’ai pu ajouter la
+          fonctionnalité et la déployer. Le retour de mon maître
+          d’apprentissage fut très positif  et marqua le début de ma deuxième
           phase d’alternance.
         </p>
       </div>
