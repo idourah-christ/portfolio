@@ -1,12 +1,14 @@
 import { Card, Col, Row } from "antd";
-import image from "./images/project/project-image01.png";
 import compilerImage from "./images/compiler.png";
 import backboneImage from "./images/backbone-js.jpeg";
 import { useNavigate } from "react-router-dom";
+import rxvalid from "./images/rxvalid.png";
 
 const { Meta } = Card;
 const boxStyles = {
-  boxShadow: "8px 8px 2px 1px rgba(0, 0, 255, .2)",
+  boxShadow: "4px 4px 6px 1px rgba(0, 0, 255, .2)",
+  minHeight:200,
+  height:280
 };
 export const ProjectCard = (props) => {
   return (
@@ -32,7 +34,7 @@ const Project = () => {
       <Col lg={8} md={8} xs={24}>
         <ProjectCard
           style={boxStyles}
-          src={image}
+          src={rxvalid}
           meta={{ title: "Rxvalid " }}
           onClick={() => handleOnClick("/articles/rxvalid")}
         />

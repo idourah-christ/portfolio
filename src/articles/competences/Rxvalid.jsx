@@ -1,5 +1,6 @@
 import { Article } from "../../component/Article";
 
+
 const RxvalidArticle = () => {
   return (
     <Article>

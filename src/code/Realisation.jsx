@@ -10,6 +10,7 @@ import jackson from "./images/jackson.jpg";
 import lacAnnecy from "./images/lacAnnecy.jpg";
 import alternance from "./images/alternance.png";
 
+
 const { Meta } = Card;
 const { Content } = Layout;
 
